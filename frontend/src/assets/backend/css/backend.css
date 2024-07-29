@@ -1,0 +1,8 @@
+.datarow .function_style
+{
+    visibility: hidden;
+}
+.datarow:hover .function_style
+{
+    visibility: visible;
+}

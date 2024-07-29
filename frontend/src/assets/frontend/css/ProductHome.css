@@ -1,0 +1,54 @@
+@keyframes scaleText {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.home-category-banner .title.animated-text {
+    color: #ff0000;
+    /* Màu đỏ */
+    font-size: 18px;
+    /* Kích cỡ ban đầu */
+    animation: scaleText 1s ease infinite;
+    /* Chạy animation */
+    /* text-align: center; Căn giữa */
+    display: inline-block;
+    /* Hiển thị là block */
+    line-height: 1;
+    /* Độ cao của dòng */
+    margin-bottom: 10px;
+    /* Khoảng cách với các phần tử khác */
+    text-shadow:
+        -1px -1px 0 #ffd700,
+        1px -1px 0 #ffd700,
+        -1px 1px 0 #ffd700,
+        1px 1px 0 #ffd700;
+    /* Tạo hiệu ứng viền màu vàng xung quanh chữ */
+}
+
+@keyframes scaleImage {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* 
+.img-bg {
+    transition: transform 0.5s ease;
+}
+
+.img-bg:hover {
+    transform: scale(1.2);
+} */

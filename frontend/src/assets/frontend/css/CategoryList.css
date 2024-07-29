@@ -1,0 +1,5 @@
+.toast-container {
+    .Toastify__progress-bar--animated {
+        transition: width 5s linear; /* Thời gian của thanh trượt */
+    }
+}

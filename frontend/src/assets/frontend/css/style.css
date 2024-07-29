@@ -1,0 +1,207 @@
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.notification button {
+    background: none;
+    border: none;
+    color: #721c24;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .chat-icons {
+        display: none;
+    }
+}
+
+.chat-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    transition: all 0.1s ease;
+    z-index: 1000;
+}
+
+.chat-icons .icon {
+    margin-top: 10px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.1s ease;
+}
+
+.chat-icons .icon:hover {
+    transform: scale(1.2);
+}
+
+.chat-icons .icon i {
+    font-size: 20px;
+    color: #555;
+}
+
+.chat-icons .close-icon {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.chat-icons .close-icon i {
+    color: #999;
+}
+
+.chat-icons .contact-us {
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.chat-icons:hover .contact-us {
+    opacity: 1;
+}
+
+/* ////// */
+.chat-icons .contact-us1 {
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.chat-icons:hover .contact-us1 {
+    opacity: 1;
+}
+
+/* ///////// */
+.chat-icons .contact-us2 {
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.chat-icons:hover .contact-us2 {
+    opacity: 1;
+}
+
+@keyframes scaleText {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.section-heading .section-title.animated-text {
+    color: #ff0000;
+    /* Màu chữ là màu trắng */
+    font-size: 35px;
+    /* Kích cỡ chữ */
+    animation: scaleText 1s ease infinite;
+    /* Animation */
+    text-align: center;
+    /* Căn giữa */
+    display: inline-block;
+    /* Hiển thị là block */
+    line-height: 1;
+    /* Độ cao của dòng */
+    margin: 0 auto;
+    /* Căn giữa */
+    font-weight: bold;
+    /* Độ đậm của chữ */
+    text-shadow:
+        -1px -1px 0 #ffd700,
+        1px -1px 0 #ffd700,
+        -1px 1px 0 #ffd700,
+        1px 1px 0 #ffd700;
+    /* Tạo hiệu ứng viền màu vàng xung quanh chữ */
+}
+
+.section-heading .section-title.animated-text::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 20px;
+    /* background: linear-gradient(to right, #ffd700, #ff0000, white); */
+    /* Gradient màu vàng, đỏ, trắng */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated-image {
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease;
+}
+
+.animated-image:hover {
+    transform: scale(1.2);
+}
+
+/* hình ảnh gốc trái của layoutsite */
+
+@media (max-width: 768px) {
+    .fixed-image-container {
+        display: none;
+    }
+}
+
+/* Styles for fixed image */
+.fixed-image-container {
+    position: fixed;
+    top: 230px;
+    /* Adjust position as needed */
+    /* Adjust position as needed */
+    z-index: 999;
+    /* Ensure it appears above other content */
+}
+
+.fixed-image {
+    width: 50px;
+    /* Adjust size as needed */
+    height: auto;
+}
